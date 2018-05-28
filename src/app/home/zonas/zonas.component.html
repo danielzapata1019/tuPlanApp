@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="cuadroBotones">  
+  <div *ngIf="undefined === listZonas">Loading...</div>
+  <div *ngIf="undefined !== listZonas">
+      <div class="row">
+        <div *ngFor="let zon of listZonas">
+            <div class="col-xs-12 col-sm-4 col-md-3">
+              <button class="button btn-bares">{{zon.nombre}}</button>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

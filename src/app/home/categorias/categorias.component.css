@@ -1,0 +1,74 @@
+.body{
+    background-image: url('https://farm5.staticflickr.com/4637/24215431677_4abd1de406.jpg')
+}
+.cuadroBotones {
+    padding: 25px 23px;
+    background: rgba(228, 228, 201, 0.54);
+    border-radius: 10px;
+    margin: 0 0 25px;
+    visibility: visible;
+    animation-name: fadeInDown;
+    margin-top: 50px;
+}
+.botonera{
+    margin-left: 40%;
+    margin-right: 40%;
+}
+.btn-principal{
+    color: #fff !important;
+    background-color: rgb(221, 136, 8);
+    border-color: #b36d04;
+}
+.btn-principal:hover, .btn-principal:focus, .btn-principal.focus, .btn-principal:active, .btn-principal.active, .open > .dropdown-toggle.btn-principal {
+    color: #fff !important;
+    background-color: rgb(247, 180, 37);
+    border-color: #b36d04;
+}
+.button {
+    background-color: rgb(221, 136, 8);
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 12px;
+    width: 100%;
+    font-size: 25px;
+}
+
+.button:hover {
+    background-color: rgb(245, 199, 48);
+    color: white;
+}
+.btn-bares{
+    background-image: url('https://farm5.staticflickr.com/4561/24215431817_9a02b3a70e.jpg')
+}
+.btn-hotels{
+    background-image: url('https://farm5.staticflickr.com/4601/39045938632_4895925e92.jpg')
+}
+.btn-disco{
+    background-image: url('https://farm5.staticflickr.com/4637/24215431677_4abd1de406.jpg')
+}
+.btn-resta{
+    background-image: url('https://farm5.staticflickr.com/4563/39045938512_2d8f10ef9a.jpg')
+}
+
+.btn-bares:hover{
+    opacity: .8;
+}
+.btn-hotels:hover{
+    opacity: .8;
+}
+
+.btn-disco:hover{
+    opacity: .8;
+}
+.btn-resta:hover{
+    opacity: .8;
+}
