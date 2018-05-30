@@ -8,6 +8,11 @@ import { RouteRoutingModule } from './route/route-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { CategoriasComponent } from './home//categorias/categorias.component';
 import { ZonasComponent } from './home/zonas/zonas.component';
+import { GestionZonasComponent } from './gestion-zonas/gestion-zonas.component';
+import { GestionEstablecimientosComponent } from './gestion-establecimientos/gestion-establecimientos.component';
+import { HeaderComponent } from './header/header.component';
+import { EstablecimientosComponent } from './gestion-establecimientos/establecimientos/establecimientos.component';
+import { UbicacionComponent } from './ubicacion/ubicacion.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +20,12 @@ import { ZonasComponent } from './home/zonas/zonas.component';
     HomeComponent,
     SliderComponent,
     CategoriasComponent,
-    ZonasComponent
+    ZonasComponent,
+    GestionZonasComponent,
+    GestionEstablecimientosComponent,
+    HeaderComponent,
+    EstablecimientosComponent,
+    UbicacionComponent
   ],
   imports: [
     BrowserModule,RouteRoutingModule,HttpClientModule
