@@ -4,7 +4,7 @@
 
 .cuadroBotones {
     padding: 25px 23px;
-    background: rgba(228, 228, 201, 0.54);
+    background: rgba(221, 227, 236, 0.23);
     border-radius: 10px;
     margin: 0 0 25px;
     visibility: visible;
@@ -88,4 +88,10 @@
 
 .btn-resta:hover {
     opacity: .8;
+}
+
+.textCategorias {
+    font-size: 46px;
+    color: #da930c;
+    text-shadow: 3px 2px 1px rgb(240, 240, 240);
 }

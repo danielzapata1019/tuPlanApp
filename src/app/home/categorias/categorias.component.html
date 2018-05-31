@@ -1,17 +1,19 @@
 <div class="container">
-  <div class="cuadroBotones">  
-  <div *ngIf="undefined === listCategorias">Loading...</div>
-  <div *ngIf="undefined !== listCategorias">
-      <div class="row">
-        <div *ngFor="let cat of listCategorias">
-            <div class="col-xs-12 col-sm-4 col-md-3">
-              <button class="button btn-hotels" (click)="next()">{{cat.nombre}}</button>
+    <div class="cuadroBotones">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <span class="textCategorias">Categorias</span>
             </div>
         </div>
-      </div>
+        <div *ngIf="undefined === listCategorias">Loading...</div>
+        <div *ngIf="undefined !== listCategorias">
+            <div class="row text-center">
+                <div *ngFor="let cat of listCategorias">
+                    <div class="col-xs-12 col-sm-4 col-md-3">
+                        <button class="button btn-hotels" (click)="next()">{{cat.nombre}}</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
 </div>
-
-
- 
