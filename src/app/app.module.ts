@@ -7,7 +7,6 @@ import { SliderComponent } from './home/slider/slider.component';
 import { RouteRoutingModule } from './route/route-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { CategoriasComponent } from './home//categorias/categorias.component';
-import { ZonasComponent } from './home/zonas/zonas.component';
 import { GestionZonasComponent } from './gestion-zonas/gestion-zonas.component';
 import { GestionEstablecimientosComponent } from './gestion-establecimientos/gestion-establecimientos.component';
 import { HeaderComponent } from './header/header.component';
@@ -20,7 +19,6 @@ import { UbicacionComponent } from './ubicacion/ubicacion.component';
     HomeComponent,
     SliderComponent,
     CategoriasComponent,
-    ZonasComponent,
     GestionZonasComponent,
     GestionEstablecimientosComponent,
     HeaderComponent,

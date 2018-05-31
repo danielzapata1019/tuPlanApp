@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from '../home/home.component';
-import { ZonasComponent } from '../home/zonas/zonas.component';
+import { GestionZonasComponent } from '../gestion-zonas/gestion-zonas.component';
 
 const routes: Routes = 
 [{
@@ -10,7 +10,7 @@ const routes: Routes =
 },
 {
   path:'zonas',
-  component:ZonasComponent
+  component:GestionZonasComponent
 }
 ];
 
