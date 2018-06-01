@@ -49,8 +49,13 @@
     transition-duration: 0.4s;
     cursor: pointer;
     border-radius: 12px;
-    /*width: 100%;*/
     font-size: 25px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 250px;
+    font-size: 30px;
+    color: #eeff06;
+    text-shadow: 3px 2px 1px rgb(3, 36, 68);
 }
 
 .button:hover {
@@ -58,7 +63,8 @@
     color: white;
 }
 
-.btn-bares {
+
+/*.btn-bares {
     background-image: url('https://farm5.staticflickr.com/4561/24215431817_9a02b3a70e.jpg')
 }
 
@@ -73,6 +79,7 @@
 .btn-resta {
     background-image: url('https://farm5.staticflickr.com/4563/39045938512_2d8f10ef9a.jpg')
 }
+
 
 .btn-bares:hover {
     opacity: .8;
@@ -89,6 +96,7 @@
 .btn-resta:hover {
     opacity: .8;
 }
+*/
 
 .textCategorias {
     font-size: 46px;
