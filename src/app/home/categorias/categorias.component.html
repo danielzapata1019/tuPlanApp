@@ -8,7 +8,7 @@
         <div *ngIf="undefined === listCategorias">Loading...</div>
         <div *ngIf="undefined !== listCategorias">
             <div class="row text-center">
-                <div *ngFor="let cat of listCategorias">
+                <div *ngFor="let cat of listCategorias" class="text-center">
                     <div class="col-md-3 text-center">
                         <button class="button btn-hotels" (click)="next()" [ngStyle]="{'background-image': 'url(' + cat.img + ')'}">{{cat.nombre}}</button>
                     </div>

@@ -35,3 +35,9 @@
 .btn-bares {
     background-image: url('https://farm5.staticflickr.com/4561/24215431817_9a02b3a70e.jpg')
 }
+
+.textZonas {
+    font-size: 46px;
+    color: #da930c;
+    text-shadow: 3px 2px 1px rgb(240, 240, 240);
+}
