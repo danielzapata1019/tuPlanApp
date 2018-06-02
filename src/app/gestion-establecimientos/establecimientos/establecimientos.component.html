@@ -1,3 +1,14 @@
-<p>
-  establecimientos works!
-</p>
+<div class="container">
+  <div class="cuadroBotones">  
+  <div *ngIf="undefined === listEstablecimiento">Loading...</div>
+  <div *ngIf="undefined !== listEstablecimiento">
+      <div class="row">
+        <div *ngFor="let est of listEstablecimiento">
+            <div class="col-xs-12 col-sm-4 col-md-3">
+              <button class="button btn-hotels" (click)="next()">{{est.nombre}}</button>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
