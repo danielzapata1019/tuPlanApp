@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ZonasService} from './zonas.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-gestion-zonas',
@@ -9,7 +10,7 @@ import { ZonasService} from './zonas.service';
 })
 export class GestionZonasComponent implements OnInit {
   listZonas: any;
-  constructor(private zonasService:ZonasService) { }
+  constructor(private zonasService:ZonasService,private router:Router) { }
 
   ngOnInit() {
     this.getRestItems();
@@ -21,6 +22,9 @@ export class GestionZonasComponent implements OnInit {
       this.listZonas=res;
       console.log(this.listZonas);
       });    
+  }
+  next(){
+    this.router.navigate(['/g-establecimientos']);
   }
 
 }

@@ -11,7 +11,7 @@
             <div class="row">
                 <div *ngFor="let zon of listZonas">
                     <div class="col-xs-12 col-sm-4 col-md-3">
-                        <button class="button">{{zon.nombre}}</button>
+                        <button class="button" (click)="next()" [ngStyle]="{'background-image': 'url(' + zon.img + ')'}">{{zon.nombre}}</button>
                     </div>
                 </div>
             </div>

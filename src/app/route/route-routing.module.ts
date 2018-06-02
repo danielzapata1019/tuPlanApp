@@ -13,8 +13,7 @@ const routes: Routes =
 {
   path:'zonas',
   component:GestionZonasComponent
-}
-,
+},
 {
   path:'g-establecimientos',
   component:GestionEstablecimientosComponent
