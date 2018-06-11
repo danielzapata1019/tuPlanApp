@@ -14,8 +14,8 @@ const routes: Routes =
   path:'zonas',
   component:GestionZonasComponent
 },
-{
-  path:'g-establecimientos',
+{ 
+  path:'g-establecimientos/:idZona',
   component:GestionEstablecimientosComponent
 }
 ];

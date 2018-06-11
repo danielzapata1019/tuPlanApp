@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ZonasService} from './zonas.service';
 import { Router } from '@angular/router';
+import { Zona } from '../gestion-zonas/zona';
 
 @Component({
   selector: 'app-gestion-zonas',
@@ -10,7 +11,14 @@ import { Router } from '@angular/router';
 })
 export class GestionZonasComponent implements OnInit {
   listZonas: any;
-  constructor(private zonasService:ZonasService,private router:Router) { }
+  public idZona: String = '';
+
+  selectedZona: Zona;
+
+  constructor(
+    private zonasService:ZonasService,
+    private router:Router
+  ) { }
 
   ngOnInit() {
     this.getRestItems();
@@ -23,8 +31,17 @@ export class GestionZonasComponent implements OnInit {
       console.log(this.listZonas);
       });    
   }
-  next(){
-    this.router.navigate(['/g-establecimientos']);
-  }
+  /*next(i){
+    this.idZona=this.listZonas(i);
+    this.router.navigate(['/g-establecimientos', this.idZona]);
+  }*/
+
+ 
+
+onSelect(zona: Zona): void {
+  this.selectedZona = zona;
+  console.log(this.selectedZona);
+  this.router.navigate(['/g-establecimientos', this.selectedZona.id]);
+}
 
 }

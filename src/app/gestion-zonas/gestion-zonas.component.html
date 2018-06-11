@@ -10,9 +10,10 @@
         <div *ngIf="undefined === listZonas">Loading...</div>
         <div *ngIf="undefined !== listZonas">
             <div class="row">
-                <div *ngFor="let zon of listZonas">
+                <div *ngFor="let zon of listZonas; let i=index">
                     <div class="col-xs-12 col-sm-4 col-md-3">
-                        <button class="button" (click)="next()" [ngStyle]="{'background-image': 'url(' + zon.img + ')'}">{{zon.nombre}}</button>
+                        <button class="button" (click)="onSelect(zon)" [ngStyle]="{'background-image': 'url(' + zon.img + ')'}">{{zon.nombre}}</button>
+                        <!--<button class="button" (click)="next({{zon.id}})" [ngStyle]="{'background-image': 'url(' + zon.img + ')'}">{{zon.nombre}}</button>-->
                     </div>
                 </div>
             </div>

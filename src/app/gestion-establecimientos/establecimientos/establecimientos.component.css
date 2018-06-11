@@ -89,3 +89,9 @@
 .btn-resta:hover {
     opacity: .8;
 }
+
+.textEstablecimientos {
+    font-size: 46px;
+    color: #da930c;
+    text-shadow: 3px 2px 1px rgb(240, 240, 240);
+}
