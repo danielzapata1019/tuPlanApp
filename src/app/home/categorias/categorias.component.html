@@ -1,0 +1,26 @@
+<div class="background">
+
+    <div class="container">
+        <div class="cuadroBotones">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <span class="textCategorias">Categorias</span>
+                </div>
+            </div>
+            <div *ngIf="undefined === listCategorias">Loading...</div>
+            <div *ngIf="undefined !== listCategorias">
+                <div class="row text-center">
+                    <div *ngFor="let cat of listCategorias; let i=index" class="text-center">
+                        <div class="col-md-3 text-center">
+                            <button class="button btn-hotels" (click)="next(i)" [ngStyle]="{'background-image': 'url(' + cat.img + ')'}">{{cat.nombre}}</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--<a class="nav-link" [routerLink]="['/zonas', 12]"> Zonas</a>-->
+
+        </div>
+    </div>
+
+</div>

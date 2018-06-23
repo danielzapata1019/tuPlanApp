@@ -1,0 +1,78 @@
+body {
+    background: #fff !important;
+    background-image: none;
+}
+
+.gmap-area {
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 70px 0;
+}
+
+.gmap-area .gmap iframe {
+    border-radius: 40%;
+    height: 280px;
+    width: 300px;
+}
+
+.gmap {
+    border: 10px solid #f6f5f0;
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+    box-shadow: 0px 0px 3px 3px #e7e4dc;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.textNombre {
+    font-size: 46px;
+    color: #daceb7;
+    text-shadow: 1px 2px 1px rgb(240, 240, 240);
+    text-transform: uppercase;
+}
+
+.textDescripcion {
+    font-size: 26px;
+    color: #e7e4dc;
+}
+
+.h1TitDet {
+    color: #008F36;
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.h3TitDet {
+    color: #008F36;
+    font-size: 15px;
+    text-align: center;
+}
+
+.hrDetalle {
+    clear: both;
+    border-bottom: 0;
+    border-top: 1px dotted #ccc;
+    border-right: 0;
+    border-left: 0;
+    margin: 0;
+    min-height: 0px;
+    height: 1px;
+}
+
+.contain {
+    background-color: #fff;
+    padding-bottom: 30px;
+}
+
+.detail {
+    margin-top: 40px;
+}
+
+.danger {
+    color: #ff3400;
+}

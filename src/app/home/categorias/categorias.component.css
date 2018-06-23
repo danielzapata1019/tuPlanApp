@@ -1,0 +1,108 @@
+.background {
+    background-image: url('https://i.ytimg.com/vi/OGfpQFMSWs8/maxresdefault.jpg');
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+.cuadroBotones {
+    padding: 25px 23px;
+    background: rgba(221, 227, 236, 0.23);
+    border-radius: 10px;
+    margin: 0 0 25px;
+    visibility: visible;
+    animation-name: fadeInDown;
+    margin-top: 50px;
+    padding-left: 70px;
+}
+
+.botonera {
+    margin-left: 40%;
+    margin-right: 40%;
+}
+
+.btn-principal {
+    color: #fff !important;
+    background-color: rgb(221, 136, 8);
+    border-color: #b36d04;
+}
+
+.btn-principal:hover,
+.btn-principal:focus,
+.btn-principal.focus,
+.btn-principal:active,
+.btn-principal.active,
+.open>.dropdown-toggle.btn-principal {
+    color: #fff !important;
+    background-color: rgb(247, 180, 37);
+    border-color: #b36d04;
+}
+
+.button {
+    background-color: rgb(221, 136, 8);
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s;
+    /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 12px;
+    font-size: 25px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 255px;
+    font-size: 30px;
+    color: #eeff06;
+    text-shadow: 3px 2px 1px rgb(3, 36, 68);
+}
+
+.button:hover {
+    background-color: rgb(245, 199, 48);
+    color: white;
+}
+
+
+/*.btn-bares {
+    background-image: url('https://farm5.staticflickr.com/4561/24215431817_9a02b3a70e.jpg')
+}
+
+.btn-hotels {
+    background-image: url('https://farm5.staticflickr.com/4601/39045938632_4895925e92.jpg')
+}
+
+.btn-disco {
+    background-image: url('https://farm5.staticflickr.com/4637/24215431677_4abd1de406.jpg')
+}
+
+.btn-resta {
+    background-image: url('https://farm5.staticflickr.com/4563/39045938512_2d8f10ef9a.jpg')
+}
+
+
+.btn-bares:hover {
+    opacity: .8;
+}
+
+.btn-hotels:hover {
+    opacity: .8;
+}
+
+.btn-disco:hover {
+    opacity: .8;
+}
+
+.btn-resta:hover {
+    opacity: .8;
+}
+*/
+
+.textCategorias {
+    font-size: 46px;
+    color: #da930c;
+    text-shadow: 3px 2px 1px rgb(240, 240, 240);
+}
