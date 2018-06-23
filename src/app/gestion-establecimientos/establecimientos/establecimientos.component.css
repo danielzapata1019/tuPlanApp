@@ -1,97 +1,78 @@
-.body {
-    background-image: url('https://farm5.staticflickr.com/4637/24215431677_4abd1de406.jpg')
+body {
+    background: #fff !important;
+    background-image: none;
 }
 
-.cuadroBotones {
-    padding: 25px 23px;
-    background: rgba(228, 228, 201, 0.54);
-    border-radius: 10px;
-    margin: 0 0 25px;
-    visibility: visible;
-    animation-name: fadeInDown;
-    margin-top: 50px;
+.gmap-area {
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 70px 0;
 }
 
-.botonera {
-    margin-left: 40%;
-    margin-right: 40%;
+.gmap-area .gmap iframe {
+    border-radius: 40%;
+    height: 280px;
+    width: 300px;
 }
 
-.btn-principal {
-    color: #fff !important;
-    background-color: rgb(221, 136, 8);
-    border-color: #b36d04;
+.gmap {
+    border: 10px solid #f6f5f0;
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+    box-shadow: 0px 0px 3px 3px #e7e4dc;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 40px;
 }
 
-.btn-principal:hover,
-.btn-principal:focus,
-.btn-principal.focus,
-.btn-principal:active,
-.btn-principal.active,
-.open>.dropdown-toggle.btn-principal {
-    color: #fff !important;
-    background-color: rgb(247, 180, 37);
-    border-color: #b36d04;
-}
-
-.button {
-    background-color: rgb(221, 136, 8);
-    border: none;
-    color: white;
-    padding: 16px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    -webkit-transition-duration: 0.4s;
-    /* Safari */
-    transition-duration: 0.4s;
-    cursor: pointer;
-    border-radius: 12px;
-    /*width: 100%;*/
-    font-size: 25px;
-}
-
-.button:hover {
-    background-color: rgb(245, 199, 48);
-    color: white;
-}
-
-.btn-bares {
-    background-image: url('https://farm5.staticflickr.com/4561/24215431817_9a02b3a70e.jpg')
-}
-
-.btn-hotels {
-    background-image: url('https://farm5.staticflickr.com/4601/39045938632_4895925e92.jpg')
-}
-
-.btn-disco {
-    background-image: url('https://farm5.staticflickr.com/4637/24215431677_4abd1de406.jpg')
-}
-
-.btn-resta {
-    background-image: url('https://farm5.staticflickr.com/4563/39045938512_2d8f10ef9a.jpg')
-}
-
-.btn-bares:hover {
-    opacity: .8;
-}
-
-.btn-hotels:hover {
-    opacity: .8;
-}
-
-.btn-disco:hover {
-    opacity: .8;
-}
-
-.btn-resta:hover {
-    opacity: .8;
-}
-
-.textEstablecimientos {
+.textNombre {
     font-size: 46px;
-    color: #da930c;
-    text-shadow: 3px 2px 1px rgb(240, 240, 240);
+    color: #daceb7;
+    text-shadow: 1px 2px 1px rgb(240, 240, 240);
+    text-transform: uppercase;
+}
+
+.textDescripcion {
+    font-size: 26px;
+    color: #e7e4dc;
+}
+
+.h1TitDet {
+    color: #008F36;
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.h3TitDet {
+    color: #008F36;
+    font-size: 15px;
+    text-align: center;
+}
+
+.hrDetalle {
+    clear: both;
+    border-bottom: 0;
+    border-top: 1px dotted #ccc;
+    border-right: 0;
+    border-left: 0;
+    margin: 0;
+    min-height: 0px;
+    height: 1px;
+}
+
+.contain {
+    background-color: #fff;
+    padding-bottom: 30px;
+}
+
+.detail {
+    margin-top: 40px;
+}
+
+.danger {
+    color: #ff3400;
 }

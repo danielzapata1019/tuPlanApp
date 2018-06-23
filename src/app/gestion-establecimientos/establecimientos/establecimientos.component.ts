@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { EstablecimientoService } from './establecimiento.service';
 import { Router, ActivatedRoute, ParamMap  } from '@angular/router';
 import { Establecimiento } from '../establecimientos/establecimiento';
-import { Zona } from '../../gestion-zonas/zona';
+
 
 @Component({
   selector: 'app-establecimientos',
@@ -13,7 +13,7 @@ import { Zona } from '../../gestion-zonas/zona';
 
 export class EstablecimientosComponent implements OnInit {
 
-  listEstablecimiento: any;
+  DetalleEstablecimiento: any;
   establecimiento: Establecimiento;
 
   constructor(
@@ -23,20 +23,14 @@ export class EstablecimientosComponent implements OnInit {
     ) { }
 
 
-  ngOnInit() {
-    this.getEstablecimiento();
-    /*this.getRestItems();*/
+  ngOnInit() {  
+    this.getEstablecimiento_id();    
   }
 
-  /*getRestItems(): void {
-    this.establecimientosService.getEstablecimientos().subscribe(res => {      
-      this.listEstablecimiento = res;
-      console.log(this.listEstablecimiento);
-    });    
-  }*/
-  getEstablecimiento(): void {
-    let id= this.route.snapshot.paramMap.get('id');
-    this.establecimientosService.getEstablecimientos(id)
-      .subscribe(estab => this.establecimiento = estab);
+  getEstablecimiento_id(): void {
+    let id= this.route.snapshot.paramMap.get('idEst');
+    this.establecimientosService.getEstablecimiento_id(id)
+      .subscribe(estab => this.DetalleEstablecimiento = estab);      
   }
+ 
 }

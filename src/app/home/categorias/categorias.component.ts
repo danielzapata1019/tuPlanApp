@@ -23,10 +23,14 @@ export class CategoriasComponent implements OnInit {
       });    
   }
 
-  next(){
+  next(i): void{
+ this.saveCategoria(i);
   this.router.navigate(['/zonas']);
 }
-
+public saveCategoria(item):void{
+  console.log('Categoria guardada. ',this.listCategorias[item].id)  
+  localStorage.setItem("categoria", this.listCategorias[item].id); 
+}
 }
 
 

@@ -10,18 +10,14 @@ import { String, StringBuilder } from 'typescript-string-operations';
 
 export class EstablecimientoService {
 
-  public estUrl:string="http://tuplansrv.herokuapp.com/api/zonas/{0}/establecimientosXzona";
+  public estUrl:string="http://tuplansrv.herokuapp.com/api/Establecimientos/{0}";
   public url:string;
 
-  /*public url:string="http://tuplansrv.herokuapp.com/api/Establecimientos";*/
-
   constructor(private http:HttpClient) { }
-
-  public getEstablecimientos(idZona:string): Observable<Establecimiento> {
-    this.url =String.Format(`${this.estUrl}`,`${idZona}`);
-    //console.log('url:',this.url);
+  
+  public getEstablecimiento_id(idEstablecimiento: string): Observable<Establecimiento> {
+    this.url = String.Format(`${this.estUrl}`, `${idEstablecimiento}`);
+    console.log('urlId:',this.url);
     return this.http.get<Establecimiento>(this.url);
   }
-
-
 }
