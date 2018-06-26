@@ -34,7 +34,7 @@ import { LoginComponent } from './login/login.component';
   imports: [
     BrowserModule,RouteRoutingModule,HttpClientModule,FormsModule,
     AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyACkZ9Uz0mI1C9Cdrk-ENY4xLVjK3QNsUQ'
+      apiKey: '***********************'
     })
   ],
   providers: [],
