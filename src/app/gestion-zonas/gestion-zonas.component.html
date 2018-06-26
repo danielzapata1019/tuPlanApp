@@ -1,19 +1,21 @@
 <app-header></app-header>
 <app-slider></app-slider>
-<div class="container">
-    <div class="cuadroBotones">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <span class="textZonas">Zonas</span>
-            </div>
-        </div>
-        <div *ngIf="undefined === listZonas">Loading...</div>
-        <div *ngIf="undefined !== listZonas">
+<div class="background">
+    <div class="container">
+        <div class="cuadroBotones">
             <div class="row">
-                <div *ngFor="let zon of listZonas; let i=index">
-                    <div class="col-xs-12 col-sm-4 col-md-3">
-                        <button class="button" (click)="onSelect(zon)" [ngStyle]="{'background-image': 'url(' + zon.img + ')'}">{{zon.nombre}}</button>
-                        <!--<button class="button" (click)="next({{zon.id}})" [ngStyle]="{'background-image': 'url(' + zon.img + ')'}">{{zon.nombre}}</button>-->
+                <div class="col-lg-12 text-center">
+                    <span class="textZonas">Zonas</span>
+                </div>
+            </div>
+            <div *ngIf="undefined === listZonas">Loading...</div>
+            <div *ngIf="undefined !== listZonas">
+                <div class="row">
+                    <div *ngFor="let zon of listZonas; let i=index">
+                        <div class="col-xs-12 col-sm-4 col-md-3">
+                            <button class="button" (click)="onSelect(zon)" [ngStyle]="{'background-image': 'url(' + zon.img + ')'}">{{zon.nombre}}</button>
+                            <!--<button class="button" (click)="next({{zon.id}})" [ngStyle]="{'background-image': 'url(' + zon.img + ')'}">{{zon.nombre}}</button>-->
+                        </div>
                     </div>
                 </div>
             </div>

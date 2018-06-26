@@ -1,5 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+
+import { AgmCoreModule } from '@agm/core';
+
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -12,6 +16,7 @@ import { GestionEstablecimientosComponent } from './gestion-establecimientos/ges
 import { HeaderComponent } from './header/header.component';
 import { EstablecimientosComponent } from './gestion-establecimientos/establecimientos/establecimientos.component';
 import { UbicacionComponent } from './ubicacion/ubicacion.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -23,10 +28,14 @@ import { UbicacionComponent } from './ubicacion/ubicacion.component';
     GestionEstablecimientosComponent,
     HeaderComponent,
     EstablecimientosComponent,
-    UbicacionComponent
+    UbicacionComponent,
+    LoginComponent
   ],
   imports: [
-    BrowserModule,RouteRoutingModule,HttpClientModule
+    BrowserModule,RouteRoutingModule,HttpClientModule,FormsModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyACkZ9Uz0mI1C9Cdrk-ENY4xLVjK3QNsUQ'
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]

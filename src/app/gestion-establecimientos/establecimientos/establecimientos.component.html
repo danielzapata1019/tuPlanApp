@@ -1,22 +1,23 @@
 <app-header></app-header>
-<div class="container">
-    <div *ngIf="undefined === DetalleEstablecimiento">Loading...</div>
-    <div *ngIf="undefined !== DetalleEstablecimiento">
-        <div class="row text-center">
-            <span class="textNombre center {{DetalleEstablecimiento.color}}">{{DetalleEstablecimiento.nombre}}</span>
-        </div>
-        <div class="row">
-            <span class="textDescripcion">{{DetalleEstablecimiento.descripcion}}</span>
-        </div>
-        <div class="gmap-area">
+<div class="background">
+    <div class="container">
+        <div *ngIf="undefined === DetalleEstablecimiento">Loading...</div>
+        <div *ngIf="undefined !== DetalleEstablecimiento">
+            <div class="row text-center">
+                <span class="textNombre center {{DetalleEstablecimiento.color}}">{{DetalleEstablecimiento.nombre}}</span>
+            </div>
+            <div class="row">
+                <span class="textDescripcion">{{DetalleEstablecimiento.descripcion}}</span>
+            </div>
             <div class="container contain">
                 <div class="row">
                     <div class="col-sm-5 text-center">
-                        <div class="gmap">
-                            <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=JoomShaper,+Dhaka,+Dhaka+Division,+Bangladesh&amp;aq=0&amp;oq=joomshaper&amp;sll=37.0625,-95.677068&amp;sspn=42.766543,80.332031&amp;ie=UTF8&amp;hq=JoomShaper,&amp;hnear=Dhaka,+Dhaka+Division,+Bangladesh&amp;ll=23.73854,90.385504&amp;spn=0.001515,0.002452&amp;t=m&amp;z=14&amp;iwloc=A&amp;cid=1073661719450182870&amp;output=embed"></iframe>
+                        <div class="gmap" style="border-color: '{{DetalleEstablecimiento.color}}'">
+                            <agm-map [latitude]="lat" [longitude]="lng">
+                                <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+                            </agm-map>
                         </div>
                     </div>
-
                     <div class="col-sm-7 detail">
                         <div class="row">
                             <div class="col-sm-12 text-center">
@@ -32,7 +33,9 @@
                                             <li>Servicios
                                                 <ul>
                                                     <div *ngFor="let serv of DetalleEstablecimiento.services">
-                                                        <li><i class="fas fa-{{serv.icon}}"></i><b>{{serv.titulo}}</b>: {{serv.descripcion}}</li>
+                                                        <li>
+                                                            <i class="fas fa-{{serv.icon}}"></i>
+                                                            <b>{{serv.titulo}}</b>: {{serv.descripcion}}</li>
                                                     </div>
                                                 </ul>
                                             </li>
@@ -47,26 +50,36 @@
                                 <div class="row form-group form-group-bottom">
                                     <div class="col-sm-6 text-left">
                                         <span class="bDetalle">Dirección:</span>
-                                        <span class="result">{{DetalleEstablecimiento.direccion}}
-                                                                </span>
+                                        <span class="result">{{DetalleEstablecimiento.direccion}}</span>
                                     </div>
                                     <div class="col-sm-6 text-left">
                                         <span class="bDetalle">Tipo de Música:</span>
-                                        <span class="result">{{DetalleEstablecimiento.music}}                                                               
-                                                                </span>
+                                        <span class="result">{{DetalleEstablecimiento.music}}</span>
                                     </div>
                                 </div>
                                 <hr class="hrDetalle">
                                 <div class="row form-group form-group-bottom">
-                                    <div class="col-sm-12 text-left" style="overflow-y: auto; max-height: 150px;">
-                                        <div>
-
+                                    <div class="col-sm-12 text-left">
+                                        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                                            <div class="carousel-inner">
+                                                <div *ngFor="let slide of DetalleEstablecimiento.images; let i=index">
+                                                    <div class="carousel-item active">
+                                                        <img class="d-block w-100" src="{{slide}}" alt="First slide">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="sr-only">Previous</span>
+                                            </a>
+                                            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="sr-only">Next</span>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
-
                             </div>
-
                         </div>
                     </div>
                 </div>

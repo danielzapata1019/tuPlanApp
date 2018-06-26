@@ -1,27 +1,29 @@
 <app-header></app-header>
-<div class="container">
-    <div class="cuadroBotones" style="background-color: rgba(228, 228, 201, 0);">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <span class="textEstablecimientos">Establecimientos</span>
-            </div>
-        </div>
-        <div *ngIf="undefined === listEstablecimiento">Loading...</div>
-        <div *ngIf="undefined !== listEstablecimiento">
+<div class="background">
+    <div class="container">
+        <div class="cuadroBotones" style="background-color: rgba(228, 228, 201, 0);">
             <div class="row">
-                <div *ngFor="let est of listEstablecimiento">
-                    <div class="col-xs-12 col-sm-4 col-md-3">
-                        <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="{{est.img}}" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">{{est.nombre}}</h5>
-                                <p class="card-text">{{est.descripcion}}</p>
-                                <div class="center">
-                                    <button class="btn btn-primary" (click)="onSelect(est)">Ir al sitio</button>
+                <div class="col-lg-12 text-center">
+                    <span class="textEstablecimientos">Establecimientos</span>
+                </div>
+            </div>
+            <div *ngIf="undefined === listEstablecimiento">Loading...</div>
+            <div *ngIf="undefined !== listEstablecimiento">
+                <div class="row">
+                    <div *ngFor="let est of listEstablecimiento">
+                        <div class="col-xs-12 col-sm-4 col-md-3">
+                            <div class="card" style="width: 18rem;">
+                                <img class="card-img-top" src="{{est.img}}" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">{{est.nombre}}</h5>
+                                    <p class="card-text">{{est.descripcion}}</p>
+                                    <div class="center">
+                                        <button class="btn btn-primary" (click)="onSelect(est)">Ir al sitio</button>
+                                    </div>
                                 </div>
                             </div>
+                            <!--<button class="button btn-hotels " (click)="next() ">{{est.nombre}}</button>-->
                         </div>
-                        <!--<button class="button btn-hotels " (click)="next() ">{{est.nombre}}</button>-->
                     </div>
                 </div>
             </div>

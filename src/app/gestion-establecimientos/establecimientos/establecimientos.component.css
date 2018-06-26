@@ -1,5 +1,5 @@
 body {
-    background: #fff !important;
+    background: #fff;
     background-image: none;
 }
 
@@ -65,8 +65,10 @@ body {
 }
 
 .contain {
-    background-color: #fff;
+    /*background-color: #fff;*/
+    background-color: #ffffff36;
     padding-bottom: 30px;
+    color: #fff;
 }
 
 .detail {
@@ -75,4 +77,12 @@ body {
 
 .danger {
     color: #ff3400;
+}
+
+agm-map {
+    height: 300px;
+}
+
+.background {
+    background-color: #03173f;
 }

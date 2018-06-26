@@ -1,15 +1,12 @@
-.body {
-    background-image: url('https://farm5.staticflickr.com/4637/24215431677_4abd1de406.jpg')
-}
-
 .cuadroBotones {
     padding: 25px 23px;
-    background: rgba(228, 228, 201, 0.54);
+    background: rgba(221, 227, 236, 0.23);
     border-radius: 10px;
-    margin: 0 0 25px;
     visibility: visible;
     animation-name: fadeInDown;
-    margin-top: 50px;
+    /*margin-top: 50px;
+    margin: 0 0 25px;*/
+    padding-left: 70px;
 }
 
 .botonera {
@@ -49,8 +46,10 @@
     transition-duration: 0.4s;
     cursor: pointer;
     border-radius: 12px;
-    /*width: 100%;*/
+    width: 226px;
     font-size: 25px;
+    color: #eeff06;
+    text-shadow: 3px 2px 1px rgb(3, 36, 68);
 }
 
 .button:hover {
@@ -62,4 +61,8 @@
     font-size: 46px;
     color: #da930c;
     text-shadow: 3px 2px 1px rgb(240, 240, 240);
+}
+
+.background {
+    background-color: #03173f;
 }
