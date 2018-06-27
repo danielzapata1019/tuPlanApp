@@ -15,8 +15,9 @@ import { GestionZonasComponent } from './gestion-zonas/gestion-zonas.component';
 import { GestionEstablecimientosComponent } from './gestion-establecimientos/gestion-establecimientos.component';
 import { HeaderComponent } from './header/header.component';
 import { EstablecimientosComponent } from './gestion-establecimientos/establecimientos/establecimientos.component';
-import { UbicacionComponent } from './ubicacion/ubicacion.component';
 import { LoginComponent } from './login/login.component';
+import { RegistroComponent } from './registro/registro.component';
+import { ReservaComponent } from './reserva/reserva.component';
 
 @NgModule({
   declarations: [
@@ -28,13 +29,14 @@ import { LoginComponent } from './login/login.component';
     GestionEstablecimientosComponent,
     HeaderComponent,
     EstablecimientosComponent,
-    UbicacionComponent,
-    LoginComponent
+    LoginComponent,
+    RegistroComponent,
+    ReservaComponent
   ],
   imports: [
     BrowserModule,RouteRoutingModule,HttpClientModule,FormsModule,
     AgmCoreModule.forRoot({
-      apiKey: '***********************'
+      apiKey: 'AIzaSyACkZ9Uz0mI1C9Cdrk-ENY4xLVjK3QNsUQ'
     })
   ],
   providers: [],
