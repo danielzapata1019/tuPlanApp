@@ -10,14 +10,16 @@ import { Router } from '@angular/router';
 export class LoginComponent implements OnInit {
   email: string = "";
   password: string = "";
+  alert: string="";
+  display='none';
   constructor(private loginService:LoginService, private router:Router) { }
 
   ngOnInit() {
     let user:any;
-    user= localStorage.getItem('user');
+    //user= localStorage.getItem('user');
+    user=sessionStorage.getItem("user");
     if(user != undefined){
-      this.router.navigate(['home']);
-
+      //this.router.navigate(['home']);
     }
   }
   login(): void {
@@ -31,13 +33,18 @@ export class LoginComponent implements OnInit {
       if(res!=undefined){
         console.log(res);
         datos=res;
-        if(user.name==datos[0].email && user.id== datos[0].birthDate){
-          localStorage.setItem("user",JSON.stringify(datos[0]));
-          console.log('se logueo');
-          this.router.navigate(['/home']);
-        }else{
-          console.log('no papa');
+        for (let i in datos) {
+          if(user.name==datos[i].email && user.id== datos[i].birthDate){
+            sessionStorage.setItem("user", JSON.stringify(datos[i]));
+           //localStorage.setItem("user",JSON.stringify(datos[i]));
+            console.log('se logueo');
+            this.display='none'; 
+            //this.router.navigate(['/home']);
+          }else{
+            this.alert="Usuario o contraseña inválidos";
+          }
         }
+       
       }
     }); 
   }
